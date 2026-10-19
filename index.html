@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{COMPANY_NAME}} | Science &amp; Medical Communication</title>
+  <meta name="description" content="{{COMPANY_NAME}} is a science communication agency specializing in medical and scientific writing, editing, and health content development.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">{{COMPANY_NAME}}</span>
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a class="btn btn-primary btn-sm" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Let’s Communicate Science Effectively</h1>
+          <p class="lead">
+            {{COMPANY_NAME}} is a science communication agency specializing in medical and scientific
+            writing, editing, and health content development. Our mission is to make science
+            accessible, accurate, and impactful.
+          </p>
+          <ul class="tags">
+            <li>Medical &amp; Clinical Writing</li>
+            <li>Health Communication</li>
+            <li>Patient Education</li>
+            <li>Content Strategy for Biotech &amp; Pharma</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-primary" href="#contact">Contact Us</a>
+            <a class="btn btn-outline" href="#services">Our Services</a>
+          </div>
+        </div>
+
+        <aside class="card card-tint">
+          <h2 class="h3">Work with Us</h2>
+          <p class="muted">Medical &amp; scientific writing, regulatory documentation, publication support and patient communication.</p>
+          <p class="contact-line"><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+          <p class="contact-line muted"><a href="tel:{{PHONE}}">{{PHONE}}</a></p>
+          <a class="btn btn-primary" href="#contact">Start a Project</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Us</h2>
+        <div class="about-grid">
+          <div>
+            <h3>Who We Are</h3>
+            <p>
+              {{COMPANY_NAME}} is a science communication agency specializing in medical and scientific
+              writing, editing, and health content development. Our mission is to make science
+              accessible, accurate, and impactful.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Our Edge</h3>
+            <ul class="checklist">
+              <li>Expertise in biomedical research and regulatory standards</li>
+              <li>Experienced medical writers and editors with scientific backgrounds</li>
+              <li>Commitment to clarity, precision, and ethical communication</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Medical &amp; Scientific Writing</h3>
+            <p>Regulatory documents, manuscripts, white papers, review articles, and grant proposals.</p>
+          </article>
+          <article class="card">
+            <h3>Clinical &amp; Regulatory Documentation</h3>
+            <p>Protocols, investigator brochures, clinical study reports, and summaries.</p>
+          </article>
+          <article class="card">
+            <h3>Health &amp; Patient Communication</h3>
+            <p>Blogs, brochures, and digital content designed for accessibility and empathy.</p>
+          </article>
+          <article class="card">
+            <h3>Publication Support</h3>
+            <p>Journal selection, manuscript editing, submission management, and responses to reviewers.</p>
+          </article>
+          <article class="card">
+            <h3>Corporate Communication</h3>
+            <p>Scientific presentations, press releases, and web content for biotech and healthcare firms.</p>
+          </article>
+        </div>
+
+        <div class="grid grid-2 subgrid">
+          <div class="card card-tint">
+            <h3>Doctor &amp; Patient Education</h3>
+            <ul class="checklist">
+              <li>Medical education (for future doctors)</li>
+              <li>CMEs for doctors</li>
+              <li>Patient education content (brochures, standees, presentations, posters &amp; videos)</li>
+              <li>Patient Support Program–related content (content, design, videos)</li>
+            </ul>
+          </div>
+          <div class="card card-tint">
+            <h3>Content Solutions</h3>
+            <ul class="checklist">
+              <li>Webinars</li>
+              <li>White papers</li>
+              <li>E-books</li>
+              <li>E-modules</li>
+              <li>Medical database</li>
+              <li>Alternative medicine content</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SELECTED WORK ========== -->
+    <!-- Example projects from the mockup. Replace with real case studies. -->
+    <section id="work" class="section">
+      <div class="container">
+        <h2>Selected Work</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Manuscript Editing — Oncology</h3>
+            <p>Comprehensive editing and submission support for a Phase II oncology trial manuscript.</p>
+          </article>
+          <article class="card">
+            <h3>Regulatory Dossier — Device</h3>
+            <p>Technical and clinical summary for CE/IN submission.</p>
+          </article>
+          <article class="card">
+            <h3>Health Blog Series — Diabetes</h3>
+            <p>Patient-focused blog series translating complex metabolic research into practical advice.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOG ========== -->
+    <!-- When a post is ready, put it in /blog and wrap the card's <h3> text in a link to it. -->
+    <section id="blog" class="section">
+      <div class="container">
+        <h2>The {{COMPANY_NAME}} Journal</h2>
+        <p class="muted section-intro">Short, informative pieces on scientific communication, nanomedicine, writing for researchers, and health awareness.</p>
+        <div class="grid">
+          <article class="card">
+            <p class="eyebrow">Writing tips for medical researchers</p>
+            <h3>How to Prepare a Submission for Clinical Journals</h3>
+            <p>Best practices for structure, transparent reporting, and responding to reviewers.</p>
+          </article>
+          <article class="card">
+            <p class="eyebrow">Health awareness</p>
+            <h3>Plain Language in Patient Materials</h3>
+            <p>Techniques to make complex information accessible without losing accuracy.</p>
+          </article>
+          <article class="card">
+            <p class="eyebrow">Trends in scientific communication</p>
+            <h3>Translating Statistical Results for Clinicians</h3>
+            <p>Tips to present effect sizes, CIs, and clinical relevance clearly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact &amp; Inquiry</h2>
+        <div class="contact-grid">
+          <form class="card form" action="{{FORMSPREE_ENDPOINT}}" method="POST">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" autocomplete="name" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@domain.com" autocomplete="email" required>
+
+            <label for="organization">Organization <span class="muted">(optional)</span></label>
+            <input id="organization" name="organization" type="text" placeholder="Institution / Company" autocomplete="organization">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Brief description of the service you need" required></textarea>
+
+            <!-- Formspree spam honeypot: leave hidden and empty -->
+            <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off">
+            <input type="hidden" name="_subject" value="New inquiry from the {{COMPANY_NAME}} website">
+
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          </form>
+
+          <aside class="card">
+            <h3>Work with Us</h3>
+            <p>Email: <a href="mailto:{{EMAIL}}"><strong>{{EMAIL}}</strong></a></p>
+            <p>Phone: <a href="tel:{{PHONE}}"><strong>{{PHONE}}</strong></a></p>
+            <p>Follow:
+              <a href="{{LINKEDIN_URL}}">LinkedIn</a> ·
+              <a href="{{RESEARCHGATE_URL}}">ResearchGate</a>
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <strong>{{COMPANY_NAME}}</strong> {{YEAR}} · Let’s Communicate Science Effectively</p>
+      <p><a href="mailto:{{EMAIL}}">{{EMAIL}}</a> · <a href="tel:{{PHONE}}">{{PHONE}}</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
