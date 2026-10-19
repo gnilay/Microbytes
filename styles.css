@@ -127,6 +127,8 @@ a:hover { color: var(--teal-dark); }
 
 .checklist { list-style: none; padding: 0; margin: 0; }
 .checklist li { position: relative; padding-left: 1.4em; margin-bottom: 0.5em; }
+.checklist-cols { columns: 3; column-gap: 32px; }
+.checklist-cols li { break-inside: avoid; }
 .checklist li::before {
   content: ""; position: absolute; left: 0; top: 0.6em;
   width: 8px; height: 8px; border-radius: 50%; background: var(--teal);
@@ -162,12 +164,14 @@ a:hover { color: var(--teal-dark); }
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .grid { grid-template-columns: repeat(2, 1fr); }
+  .checklist-cols { columns: 2; }
   .hero-grid, .contact-grid, .about-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 600px) {
   .container { padding: 0 16px; }
   .grid, .grid-2 { grid-template-columns: 1fr; }
+  .checklist-cols { columns: 1; }
   .brand-mark { width: 44px; height: 44px; }
   .hero { padding: 48px 0; }
   .section { padding: 48px 0; }
