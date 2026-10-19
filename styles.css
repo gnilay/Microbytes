@@ -1,0 +1,176 @@
+/* ---------- Tokens ---------- */
+:root {
+  --teal: #0f8a7e;
+  --teal-dark: #0b6e65;
+  --teal-tint: #f3faf9;
+  --text: #1a1f24;
+  --muted: #5b6670;
+  --border: #e6ebee;
+  --bg: #ffffff;
+  --radius: 10px;
+  --shadow: 0 2px 12px rgba(16, 24, 32, 0.06);
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+h1, h2, h3 { line-height: 1.25; margin: 0 0 0.6em; }
+h1 { font-size: clamp(2rem, 4vw, 2.6rem); letter-spacing: -0.01em; }
+h2 { font-size: 1.6rem; }
+h3, .h3 { font-size: 1.1rem; }
+p { margin: 0 0 1em; }
+
+a { color: var(--teal); }
+a:hover { color: var(--teal-dark); }
+
+.container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+.muted { color: var(--muted); }
+.lead { font-size: 1.1rem; color: var(--muted); max-width: 60ch; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 0.7em 1.3em;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-sm { padding: 0.45em 1em; }
+.btn-primary { background: var(--teal); color: #fff; }
+.btn-primary:hover { background: var(--teal-dark); color: #fff; }
+.btn-outline { border-color: var(--border); color: var(--teal); background: #fff; }
+.btn-outline:hover { border-color: var(--teal); }
+
+/* ---------- Header / Nav ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid var(--border);
+}
+.nav {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+  padding-top: 14px; padding-bottom: 14px;
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); }
+.brand-mark { width: 28px; height: 28px; border-radius: 7px; background: var(--teal); }
+.brand-name { font-weight: 700; font-size: 1.15rem; }
+
+.nav-links {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; align-items: center; flex-wrap: wrap; gap: 4px 20px;
+}
+.nav-links a:not(.btn) { color: var(--text); text-decoration: none; font-weight: 500; }
+.nav-links a:not(.btn):hover { color: var(--teal); }
+
+/* ---------- Sections ---------- */
+.hero { padding: 72px 0 64px; border-bottom: 1px solid var(--border); }
+.hero-grid {
+  display: grid; grid-template-columns: 1.6fr 1fr; gap: 48px; align-items: center;
+}
+.section { padding: 64px 0; border-bottom: 1px solid var(--border); }
+.section:last-of-type { border-bottom: 0; }
+.section-intro { margin-top: -0.4em; margin-bottom: 1.6em; }
+
+.tags { list-style: none; padding: 0; margin: 24px 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li {
+  padding: 0.35em 0.9em; border-radius: 999px;
+  background: var(--teal-tint); color: var(--teal-dark);
+  font-size: 0.9rem; font-weight: 500;
+}
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.contact-line { margin: 0 0 0.3em; font-weight: 600; }
+.contact-line a { color: inherit; text-decoration: none; }
+.card .btn { margin-top: 12px; }
+
+/* ---------- Cards & grids ---------- */
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.subgrid { margin-top: 20px; }
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+.card p:last-child { margin-bottom: 0; }
+.card > p { color: var(--muted); font-size: 0.95rem; }
+.card-tint { background: var(--teal-tint); }
+
+.eyebrow {
+  font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--teal) !important; margin-bottom: 0.5em;
+}
+
+.checklist { list-style: none; padding: 0; margin: 0; }
+.checklist li { position: relative; padding-left: 1.4em; margin-bottom: 0.5em; }
+.checklist li::before {
+  content: ""; position: absolute; left: 0; top: 0.6em;
+  width: 8px; height: 8px; border-radius: 50%; background: var(--teal);
+}
+
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+
+/* ---------- Contact form ---------- */
+.contact-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 24px; align-items: start; }
+.form { display: flex; flex-direction: column; }
+.form label { font-size: 0.9rem; color: var(--muted); margin: 0 0 6px; }
+.form input, .form textarea {
+  font: inherit; color: var(--text);
+  padding: 0.7em 0.9em; margin-bottom: 16px;
+  border: 1px solid var(--border); border-radius: 8px; background: #fff;
+}
+.form input:focus, .form textarea:focus {
+  outline: 2px solid var(--teal); outline-offset: 0; border-color: var(--teal);
+}
+.form textarea { resize: vertical; }
+.form .btn { align-self: flex-start; margin-top: 4px; }
+
+/* ---------- Footer ---------- */
+.site-footer { border-top: 1px solid var(--border); padding: 28px 0; font-size: 0.9rem; color: var(--muted); }
+.footer-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; }
+.footer-row p { margin: 0; }
+.footer-row a { color: var(--muted); }
+
+/* ---------- Blog post pages ---------- */
+.post { max-width: 720px; padding-top: 56px; padding-bottom: 64px; }
+.post-meta { color: var(--muted); font-size: 0.9rem; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-grid, .contact-grid, .about-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .container { padding: 0 16px; }
+  .grid, .grid-2 { grid-template-columns: 1fr; }
+  .hero { padding: 48px 0; }
+  .section { padding: 48px 0; }
+  .site-header { position: static; }
+  .nav-links { gap: 4px 14px; font-size: 0.95rem; }
+  .nav-links li:first-child { display: none; } /* the logo already links home */
+}
