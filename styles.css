@@ -8,7 +8,7 @@
   --border: #e6ebee;
   --bg: #ffffff;
   --radius: 10px;
-  --shadow: none;
+  --shadow: 0 2px 12px rgba(16, 24, 32, 0.06);
   --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -134,15 +134,6 @@ a:hover { color: var(--teal-dark); }
 
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
 
-/* Services as a ruled list rather than another card grid */
-.service-list { margin: 0; border-top: 1px solid var(--border); }
-.service-list > div {
-  display: grid; grid-template-columns: 1fr 2fr; gap: 8px 32px;
-  padding: 20px 0; border-bottom: 1px solid var(--border);
-}
-.service-list dt { font-weight: 600; }
-.service-list dd { margin: 0; color: var(--muted); }
-
 /* ---------- Contact form ---------- */
 .contact-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 24px; align-items: start; }
 .form { display: flex; flex-direction: column; }
@@ -177,7 +168,6 @@ a:hover { color: var(--teal-dark); }
 @media (max-width: 600px) {
   .container { padding: 0 16px; }
   .grid, .grid-2 { grid-template-columns: 1fr; }
-  .service-list > div { grid-template-columns: 1fr; }
   .brand-mark { width: 44px; height: 44px; }
   .hero { padding: 48px 0; }
   .section { padding: 48px 0; }
